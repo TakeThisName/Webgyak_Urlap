@@ -10,7 +10,8 @@
     <body>
         <div id="content">
             <form>
-                <input type="text" id="username" name="username" placeholder="Felhasználónév" size="30" required minlength="8" maxlength="25">
+                <input type="text" id="username" name="username" placeholder="Felhasználónév" size="30" 
+                       required minlength="8" maxlength="25" onblur="UserCheck()">
                 <br><br>
                 <input type="password" id="password" placeholder="Jelszó" size="30" required minlength="8" maxlength="25">
                 <br><br>
