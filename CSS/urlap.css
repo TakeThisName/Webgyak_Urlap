@@ -2,3 +2,12 @@
     color: red;
     font-size: 1.2em;
 }
+
+#content {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    margin-top: 0.5em;
+}
