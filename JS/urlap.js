@@ -16,6 +16,27 @@ function UserCheck(){
     
     //console.log(userName.length);
 }
+/*
+function VanESzam(szo){
+    let hossz = szo.length;
+    for (let i = 0; i < hossz.length; i++){
+        if (isFinite(szo.charAt(i)))
+            return false;
+    }
+}
+*/
+
+function EmailChk(){
+    document.getElementById("emailERR").innerHTML = "";
+    var email = document.getElementById("email").value;
+    email = email.split(".");
+    email = email[email.length-1];
+    
+    if (email.length > 1 && email.length < 5)
+        console.log("ok");
+    else
+        document.getElementById("emailERR").innerHTML = "Az email cím nem felel meg a sablonnak";
+}
 
 function PasswChk(){
     var passw = document.getElementById("password").value;
