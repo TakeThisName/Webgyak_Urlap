@@ -15,20 +15,22 @@
                        required minlength="8" maxlength="25" onblur="UserCheck()">
                 <span id="usernameERR" class="ERR"></span>
                 <br><br>
-                <input type="password" id="password" placeholder="Jelszó" size="30" required minlength="8" maxlength="25">
+                <input type="password" id="password" placeholder="Jelszó" size="30" required minlength="8" maxlength="25" onblur="PasswChk()">
+                <span id="passwERR" class="ERR"></span>
                 <br><br>
-                <input type="password" id="password2" placeholder="Jelszó mégegyszer" size="30" required>
+                <input type="password" id="password2" placeholder="Jelszó mégegyszer" size="30" required onblur="PasswChk()">
+                <span id="passwERR2" class="ERR"></span>
                 <br><br>
                 <input type="email" id="email" placeholder="xyz@123.ok">
                 <br><br>
                 Kérem adja meg a születési idelyét:
                 <br>
-                <input type="date" id="szulido" min="1980-01-01" max="2015-01-01">
+                <input type="date" id="szulido" min="1900-01-01" max="2015-01-01">
                 <br><br>
-                <input type="radio" name="nem">Férfi
+                <input type="radio" name="nem" checked="checked">Férfi
                 <input type="radio" name="nem">Nő
                 <br><br>
-                <input type="checkbox" name="accept"> A feltételeket elfogadom
+                <input type="checkbox" name="accept" checked="checked"> A feltételeket elfogadom
                 <br><br>
                 Irányítószám:
                 <br>
